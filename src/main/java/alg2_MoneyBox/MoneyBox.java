@@ -13,10 +13,16 @@ public class MoneyBox
     }
     public MoneyBox(String owner){
         this.owner = owner;
+        this.singles = 0;
+        this.doubles = 0;
     }
 
     public void setOwner(String owner){
         this.owner = owner;
+    }
+    public void moveTo(MoneyBox box){
+        box.singles += singles;
+        box.doubles += doubles;
     }
 
     public int getSum(){

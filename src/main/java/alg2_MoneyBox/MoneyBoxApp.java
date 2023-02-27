@@ -43,6 +43,8 @@ public class MoneyBoxApp
         }
 
         Bob.setOwner("Alice");
+        Bob.moveTo(Alice);
+        System.out.println(Alice);
 
     }
 
